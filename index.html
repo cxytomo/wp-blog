@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tomorrow</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+</head>
+<body>
+	<header id="header">
+		<div>
+			<h1>Tomorrow</h1>
+			<div class="quote">
+				<h2>learn as if you were going to live forever</h2>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper">
+		<nav id="nav">
+			<div class="home_banner">
+				<a href="index.html">Home</a>
+			</div>
+			<div class="archives">
+				<a href="#">Archives</a>
+			</div>
+		</nav>
+		<div class="about">
+			<h2>About</h2>
+			<div id="slides">
+				<a class="prev slide_controller fLeft" href="javascript:;">pre</a>
+				<a class="next slide_controller fRight" href="javascript:;">next</a>
+	<!--
+				<div class="slides">
+					<ul class="slides_content">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul class="slides_position_tip">
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+	-->
+				<div class="about_slides">
+					<ul class="slides_content">
+						<li class="academic">
+							<img src="images/academic.png" title="academic" alt="academic" width="464px" height="280px">
+							<span>知识改变命运，2012年成为浙工大控制科学与工程专业研究生，成功躲过世界末日</span>
+						</li>
+						<li class="desired_job">
+							<img src="images/desired_job.png" title="desired job" alt="desired job" width="464px" height="280px">
+							<span>所学专业研究控制算法，与此同时自学前端相关技术，包括THML、CSS、JS，希望以后在杭州找一份前端的工作</span>
+						</li>
+						<li class="intro active">
+							<img src="images/intro.png" title="introduce" alt="introduce" width="464px" height="280px">
+							<span>妹子，出生于1989年，狮子座</span>
+						</li>
+					</ul>
+				</div>
+				<ul class="slides_position_tip">
+					<li class="introduce fLeft active"></li>
+					<li class="academic fLeft"></li>
+					<li class="desired_job fLeft"></li>
+				</ul>
+			</div>
+		</div>
+		<div id="main-col" class="clearfix">
+			<div class="main_wrapper fLeft">
+				<article class="post writing">
+					<div class="post_content">
+						<header class="fLeft">
+							<div class="date">
+								<span>Feb 2</span>
+							</div>
+							<div class="icon"></div>
+							<div class="comment">
+								<a href="#">1</a>
+							</div>
+						</header>
+						<div class="entry">
+							<h1  class="title">
+								<a href="#">Statue of Liberty</a>
+							</h1>
+							<p>The Statue of Liberty (Liberty Enlightening the World; French: La Liberté éclairant le monde) is a colossal neoclassical sculpture on Liberty Island in New York Harbor, designed by Frédéric Bartholdi and dedicated on October 28, 1886. </p>
+							<p>
+								<strong>A normal paragraph</strong>
+							</p>
+							<p>
+								The people of France, is of a <strong>robed(strong)</strong> female figure <em>representing(italic)</em> Libertas, the <a href="http://en.wikipedia.org/wiki/Roman">Roman</a> goddess of freedom, who bears a torch and a tabula ansata (a tablet evoking the law) upon which is inscribed the date of the American Declaration of Independence, July 4, 1776. 
+							</p>
+							<p>
+								<strong>A paragraph as code</strong>
+							</p>
+							<pre>(function(){
+    var canv = document.getElementById('canvas')
+    ,    contxt = canv.getContext('2d');
+    contxt.fillStyle = '#379aff';
+    contxt.arc(200,200,100, 0, 2*Math.PI);
+    contxt.fill();
+    contxt.save();
+    contxt.fillStyle = 'white';
+    contxt.beginPath();
+    contxt.arc(200,200,80, 0, 2*Math.PI);
+    contxt.closePath();
+    contxt.fill();
+    contxt.save();
+    contxt.beginPath();
+    contxt.fillStyle = 'black';
+    contxt.arc(200,200,60, 0, 2*Math.PI);
+    contxt.fill();
+    contxt.restore();//白色
+    contxt.beginPath();
+    contxt.arc(200,200,40, 0, 2*Math.PI);
+    contxt.fill();
+    contxt.restore();//蓝色
+    contxt.beginPath();
+    contxt.arc(200,200,20, 0, 2*Math.PI);
+    contxt.fill();
+})();</pre>
+							<p><strong>A paragraph as blockquote</strong></p>
+							<blockquote>
+								<p>Learn as if you were going to live forvever, live as if you were going to  die tomorrow</p>
+							</blockquote>
+							<p>
+								<strong>Unordered list</strong>
+							</p>
+							<ul>
+								<li>Learn as if you were going to live forvever</li>
+								<li>live as if you were going to  die tomorrow</li>
+							</ul>
+							<p>
+								<strong>Ordered list</strong>
+							</p>
+							<ol>
+								<li>Learn as if you were going to live forvever</li>
+								<li>live as if you were going to  die tomorrow</li>
+							</ol>
+							<p>
+								<strong>Headings</strong>
+							</p>
+							<h1>Heading1</h1>
+							<h2>Heading2</h2>
+							<h3>Heading3</h3>
+							<h4>Heading4</h4>
+							<h5>Heading5</h5>
+							<h6>Heading6</h6>
+							<p class="read_more"><a href="#">Read More</a></p>
+						</div>
+						<footer>
+							<div class="categories">
+								<p>Categories: <a href="#">HTML</a><span>, </span><a href="#">Canvas</a></p>
+							</div>
+							<div class="tags">
+								<p>Tags: <a href="#">HTML</a><span>, </span><a href="#">Canvas</a></p>
+							</div>
+						</footer>
+					</div>
+				</article>
+				<div class="year_seperate">
+					2012
+				</div>
+				<article class="post image">
+					<div class="post_content">
+						<header class="fLeft">
+							<div class="date">
+								<span>Dec 12</span>
+							</div>
+							<div class="icon"></div>
+							<div class="comment">
+								<a href="#">123</a>
+							</div>
+						</header>
+						<div class="entry">
+							<h1 class="title"><a href="#">Lonely Twitter</a></h1>
+							<div class="img_wrapper">
+								<img src="images/twitter.jpg" alt="Lonely Twitter" width="489px" height="262px">
+								<div class="zoom"></div>
+							</div>
+							<p class="download"><a href="#">Download</a></p>
+						</div>
+						<footer>
+							<div class="categories">
+								<p>Categories: <a href="#">Design</a></p>
+							</div>
+							<div class="tags">
+								<p>Tags: <a href="#">HTML</a><span>, </span><a href="#">Canvas</a></p>
+							</div>
+						</footer>
+					</div>
+				</article>
+			</div>
+			<aside class="sidebar fRight">
+				<div class="search">
+					<form action="#" method="post" id="site_search">
+						<input type="search" placeholder="Search" name="q" id="q">
+					</form>
+				</div>
+				<div class="classify">
+					<div class="tags">
+						<h5>Tags</h5>
+						<ul>
+							<li class="clearfix">
+								<a href="">Ajax</a>
+								<span>11</span>
+							</li>
+							<li class="clearfix">
+								<a href="">Canvas</a>
+								<span>11</span>
+							</li>
+							<li class="clearfix">
+								<a href="">JS</a>
+								<span>11</span>
+							</li>
+							<li class="clearfix">
+								<a href="">CSS</a>
+								<span>11</span>
+							</li>
+							<li class="clearfix">
+								<a href="">HTML</a>
+								<span>11</span>
+							</li>
+							<li class="clearfix">
+								<a href="">jack</a>
+								<span>115</span>
+							</li>
+							<li class="show_all">
+								<a href="">...</a>
+							</li>
+						</ul>
+					</div>
+					<div class="categories">
+						<h5>Categories</h5>
+						<ul>
+							<li class="clearfix">
+								<a href="">Ajax</a>
+								<span>11</span>
+							</li>
+							<li class="clearfix">
+								<a href="">Canvas</a>
+								<span>11</span>
+							</li>
+							<li class="clearfix">
+								<a href="">JS</a>
+								<span>11</span>
+							</li>
+							<li class="clearfix">
+								<a href="">CSS</a>
+								<span>11</span>
+							</li>
+							<li class="clearfix">
+								<a href="">HTML</a>
+								<span>11</span>
+							</li>
+							<li class="clearfix">
+								<a href="">jack</a>
+								<span>115</span>
+							</li>
+							<li class="show_all">
+								<a href="">...</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>
+	<footer id="footer">
+		<p>© 2013 Tomo</p>
+	</footer>
+	
+	<script src="jquery-1.8.2.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
