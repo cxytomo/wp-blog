@@ -9,12 +9,10 @@ window.onload = (function() {
 	, mod
 	, interv = window.setInterval(function(){
 		count();
-		console.log(interv);
 	}, 4000);
 
 	function stopInterval() {
 		window.clearInterval(interv);
-		console.log('clearInterval');
 	}
 
 	function resumeInterval() {
@@ -32,8 +30,7 @@ window.onload = (function() {
 		var deg = 120 * n;
 		if(n < 0) {
 			mod = (n + 100 * N) % N;
-		}
-		else {
+		} else {
 			mod = n % N;
 		}
 		$('.about .active').removeClass('active');
@@ -76,6 +73,55 @@ window.onload = (function() {
 		slideTo(n);
 		resumeInterval();
 	});
-	slides_box[0].addEventListener('mouseenter',stopInterval,false);
-	slides_box[0].addEventListener('mouseleave',resumeInterval,false);
+	slides_box.mouseenter(function() {
+		stopInterval();
+	});
+	slides_box.mouseleave(function() {
+		resumeInterval();
+	});
 })();
+
+//image
+(function(){
+	$('article.image .img_wrapper').mouseenter(function(e) {
+		var tar;
+		e = e || event;
+		tar  = e.target || e. srcElement;
+		tar.parentNode.getElementsByClassName('zoom')[0].style.display = 'block';
+	});
+	$('article.image .img_wrapper').mouseleave(function(e) {
+		var tar;
+		e = e || event;
+		tar  = e.target || e. srcElement;
+		tar.parentNode.getElementsByClassName('zoom')[0].style.display = 'none';
+	});
+})();
+
+//scrollToTop
+function getOffset(w) {
+		w = w || window;
+		//this works in all current browsers except ≤IE8
+		if(w.pageXOffset != null) 
+			return {
+			x: w.pageXOffset, y: w.pageYOffset
+		} 
+		var doc = w.document;
+		if(doc.compatMode == "CSS1Compat") 
+			return {
+			x: doc.documentElement.scrollLeft, y: doc.documentElement.scrollTop
+		}
+		return {
+			x: doc.body.scrollLeft, y: doc.body.scrollTop
+		}
+}
+
+window.onscroll = function(){
+	var offset = getOffset();
+	if(offset.y > 300) {
+		$('#nav .archives span').css('opacity','1');
+		$('#nav .archives').css('paddingRight','58px');
+	} else {
+		$('#nav .archives span').css('opacity','0');
+		$('#nav .archives').css('paddingRight','18px');
+	}
+};
