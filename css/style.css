@@ -50,6 +50,7 @@ a:hover {
 /* close commented backslash hack */
 
 article {
+	color: #333;
 	border: 1px solid #ddd;
 }
 
@@ -451,17 +452,18 @@ article header {
 }
 
 .post .entry pre {
-	font: normal 14px/1.3em Courier,monospace;
+	font: normal 14px/1.3em Monaco, Menlo, Consolas, Courier, monospace;
 	border: 1px solid #ddd;
 	padding: 7px 15px;
-	color: #9da2a6;
+	color: rgba(51, 51, 51, 0.8);
 	border-radius: 5px;
-	-webkit-border-radius: 5px;
+	-webkit-border-radius: 2px;
 	margin-bottom: 20px;
+	background-color: #eee;
 }
 
 .post .entry blockquote {
-	font: 30px "Edwardian Script ITC", Arial, sans-serif;
+	font: 30px "Edwardian Script ITC",Tangerine,Georgia, serif;
 	text-align: center;
 }
 
