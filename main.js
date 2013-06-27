@@ -118,10 +118,14 @@ function getOffset(w) {
 window.onscroll = function(){
 	var offset = getOffset();
 	if(offset.y > 300) {
-		$('#nav .archives span').css('opacity','1');
+		$('#nav .archives .toTop').css('opacity','1');
 		$('#nav .archives').css('paddingRight','58px');
 	} else {
-		$('#nav .archives span').css('opacity','0');
+		$('#nav .archives .toTop').css('opacity','0');
 		$('#nav .archives').css('paddingRight','18px');
 	}
 };
+
+$('#nav .archives .toTop').click(function() {
+	window.scrollTo(0,0);
+});

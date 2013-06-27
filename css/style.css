@@ -86,14 +86,14 @@ article header {
 #nav {
 	position: fixed;
 	top: 224px;
-	left: 1096px;
-	z-index: -1000;
+	left: 50%;
+	margin-left: 480px;
 }
 
 #nav .archives {
 	background-color: #444;
-	padding-right: 18px;
-	padding-left: 26px;
+	padding-right: 16px;
+	padding-left: 8px;
 	-webkit-transition: -webkit-padding-right 1.5s;
 	-moz-transition: -moz-padding-right 1.5s;
 	-ms-transition: -ms-padding-right 1.5s;
@@ -104,15 +104,16 @@ article header {
 	border-radius: 0 30px 30px 0;
 }
 
-#nav .archives > a {
+#nav .archives a {
 	line-height: 68px;
 	display: inline-block;
 	color: #fff;
 }
 
-#nav .archives span {
+#nav .archives .toTop {
 	opacity: 0;
 	display: inline-block;
+	margin: 0 5px;
 	-webkit-transition: opacity .2s .5s;
 	-moz-transition: opacity 1.5s 1s;
 	-ms-transition: opacity .2s .5s;
@@ -571,7 +572,7 @@ aside .search {
 	color: #c6cace;
 	width: 100%;
 	font-size: 16px;
-	padding: 3px 2px 3px 12px;
+	padding: 3px 2px 3px 14px;
 	background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowODgwMTE3NDA3MjA2ODExOEMxNDg1NkU1NkEyNDhCOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NjQ2QTJGQUNGRTIxMUUyODRCQkYyN0EzMjZEQThFQSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NjQ2QTJGOUNGRTIxMUUyODRCQkYyN0EzMjZEQThFQSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDRGNUY5RDExNjIwNjgxMTgyMkFCOEVDNzdENjQ5QTciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDg4MDExNzQwNzIwNjgxMThDMTQ4NTZFNTZBMjQ4QjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5uMY+RAAABI0lEQVR42pTSPy9DURzG8XMbA20iiM0gQSeJzUzEImKi8SK6mVB/BoNJIjHwEohNDRia0ITSaCLeglhsNLUYfH/JI7m5frf0ST45w73nOefec6Lbh0ZQ+rCCRYzgA/c4wFVISUbjOJ6xgTcc4QwTuFRJ5BV0aeULdGMaN4nnO1jFK3a9Hdi2h7CUmGz5whpOUUK/V2DfXMV1SM8ecpj3CkbxGNrnSWPeK2ii94+CnMamV3CHWf2wtMxorHoFdkTD2EqZbLvbRl334leBXZJDbOIYkzrSQRRQ0z35RI93DyxFvGAdy4l36jqhKZSxgNbPwyh2lS0DmMMY3rV6TSuX9S8q8ZJkQbtkvZJM+H9amlRRiZVlOynwSk46LYiXnGP/W4ABAOrRQVw2MUNRAAAAAElFTkSuQmCC') no-repeat 5px 50%;
 	-webkit-appearance: textfield;
 	appearance: textfield;
@@ -633,6 +634,7 @@ aside .search {
 
 /*footer*/
 #footer p {
+	font-size: 12px;
 	width: 960px;
 	margin: 0 auto;
 	color: white;
