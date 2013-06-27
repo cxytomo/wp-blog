@@ -147,7 +147,7 @@ article header {
 #header h1 a {
 	display: inline-block;
 	padding-top: 16px;
-	font: 78px "Edwardian Script ITC", Arial, sans-serif;
+	font: 78px "Edwardian Script ITC",Tangerine,Georgia, serif;
 	line-height: 106px;
 	color: #253302;
 }
