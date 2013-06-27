@@ -1,3 +1,4 @@
+@import url('http://fonts.googleapis.com/css?family=Tangerine');
 body {
 	background-color: #6a5b77;
 	position: relative;
@@ -131,7 +132,7 @@ article header {
 /* @font-face */
 @font-face {
 	font-family: "Edwardian Script ITC";
-	src: url('/font/ITCEdscr.TTF');
+	src: local('/font/ITCEdscr.TTF'),url('/font/ITCEdscr.TTF'),url('http://www.freefontsdb.com/detail/6324/Edwardian-Script-ITC');
 }
 
 @font-face {
