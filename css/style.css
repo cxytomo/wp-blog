@@ -1,12 +1,6 @@
 @import url('http://fonts.googleapis.com/css?family=Tangerine');
-@import url('http://designgraphics.org/modules.php?name=Downloads&d_op=getit&lid=103');
 
 /* @font-face */
-@font-face {
-	font-family: "Edwardian Script ITC";
-	src: local('/font/ITCEdscr.TTF'),url('/font/ITCEdscr.TTF'),url('http://designgraphics.org/modules.php?name=Downloads&d_op=getit&lid=103');
-}
-
 @font-face {
 	font-family: "Courier";
 	src: url('/font/Courier.ttf');
@@ -94,7 +88,6 @@ article header {
 #footer {
 	height: 50px;
 	width: 100%;
-	background-color: #444444;
 }
 
 /*nav*/
@@ -105,27 +98,35 @@ article header {
 	margin-left: 480px;
 }
 
-#nav .archives {
+#nav .home, #nav .archives {
 	background-color: #444;
 	padding-right: 16px;
 	padding-left: 8px;
-	-webkit-transition: -webkit-padding-right 1.5s;
-	-moz-transition: -moz-padding-right 1.5s;
-	-ms-transition: -ms-padding-right 1.5s;
-	-o-transition: -o-padding-right 1.5s;
-	transition: padding-right 1.5s;
+	margin-bottom: 10px;
 	font-size: 20px;
 	-webkit-border-radius: 0 30px 30px 0;
 	border-radius: 0 30px 30px 0;
 }
 
-#nav .archives a {
+#nav .home {
+	width: 92px;
+}
+
+#nav .archives {
+	-webkit-transition: -webkit-padding-right 1.5s;
+	-moz-transition: -moz-padding-right 1.5s;
+	-ms-transition: -ms-padding-right 1.5s;
+	-o-transition: -o-padding-right 1.5s;
+	transition: padding-right 1.5s;
+}
+
+#nav .home a, #nav .archives a  {
 	line-height: 68px;
 	display: inline-block;
 	color: #fff;
 }
 
-#nav .archives .toTop {
+#nav .toTop {
 	opacity: 0;
 	display: inline-block;
 	margin: 0 5px;
@@ -136,7 +137,7 @@ article header {
 	transition: opacity .2s .5s;
 	float: right;
 	position: absolute;
-	top: 0;
+	top: 78px;
 	right: 8px;
 	width: 25px;
 	height: 68px;
@@ -328,7 +329,7 @@ article header {
 #main-col {
 	margin-top: 22px;
 	width: 960px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .main_wrapper {
@@ -451,7 +452,7 @@ article header {
 	line-height: 1.3em;
 }
 
-.post .entry pre {
+.entry-content .gist, .post .entry pre {
 	font: normal 14px/1.3em Monaco, Menlo, Consolas, Courier, monospace;
 	border: 1px solid #ddd;
 	padding: 7px 15px;
@@ -551,13 +552,6 @@ article header {
 
 .post footer .categories {
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowODgwMTE3NDA3MjA2ODExOEMxNDg1NkU1NkEyNDhCOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NjQ2QTJGRUNGRTIxMUUyODRCQkYyN0EzMjZEQThFQSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NjQ2QTJGRENGRTIxMUUyODRCQkYyN0EzMjZEQThFQSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDRGNUY5RDExNjIwNjgxMTgyMkFCOEVDNzdENjQ5QTciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDg4MDExNzQwNzIwNjgxMThDMTQ4NTZFNTZBMjQ4QjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6oFEmWAAAA0UlEQVR42mJMSkpigAIeIH4CxPwM+MFHIJYB4i8gDhOSRCQRmhmgaqJhHGQD0qB0HBAz4sDxUDWp6AYYA7EJED8H4pV4bF8BVWMMxXADYCbOAuJfeAz4BVUD18MEDbxoqORMIsJgJlQtSA8PE4wBxKugziMEYN4EWwwyIAUqMZWBeDAN5g2QAfpQznEg/g/Ep9BiBznAT0HVHIeK6YMEWdEUmiK5ChkkQ+WQAQsTDie2oSUqELsdm0IWHAYIA/EHYgKDiYFCMDgMOEKB/qMAAQYAitIi0DH8NBcAAAAASUVORK5CYII=');
-}
-
-/*year separate*/
-.year_seperate {
-	color: rgba(98, 98, 98, 0.7);
-	border-bottom: 1px solid rgba(98, 98, 98, 0.2);
-	margin-bottom: 10px;
 }
 
 /*sidebar*/

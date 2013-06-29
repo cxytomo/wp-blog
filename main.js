@@ -117,11 +117,11 @@ function getOffset(w) {
 
 window.onscroll = function(){
 	var offset = getOffset();
-	if(offset.y > 300) {
-		$('#nav .archives .toTop').css('opacity','1');
+	if(offset.y > 400) {
+		$('#nav .toTop').css('opacity','1');
 		$('#nav .archives').css('paddingRight','58px');
 	} else {
-		$('#nav .archives .toTop').css('opacity','0');
+		$('#nav .toTop').css('opacity','0');
 		$('#nav .archives').css('paddingRight','18px');
 	}
 };
