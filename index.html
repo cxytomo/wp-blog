@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tomorrow</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css"> 
 </head>
 <body>
@@ -30,20 +29,6 @@
 			<div id="slides">
 				<a class="prev slide_controller fLeft" href="javascript:;">pre</a>
 				<a class="next slide_controller fRight" href="javascript:;">next</a>
-	<!--
-				<div class="slides">
-					<ul class="slides_content">
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-					<ul class="slides_position_tip">
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-					</ul>
-				</div>
-	-->
 				<div class="about_slides">
 					<ul class="slides_content" id="threeD_slides">
 						<li class="intro active">
@@ -73,7 +58,8 @@
 					<div class="post_content">
 						<header>
 							<div class="date">
-								<span>Feb 2</span>
+								<span class="month">Feb</span>
+								<span class="day">2</span>
 							</div>
 							<div class="icon"></div>
 							<div class="comment">
@@ -163,7 +149,8 @@
 					<div class="post_content">
 						<header>
 							<div class="date">
-								<span>Dec 12</span>
+								<span class="month">Dec</span>
+								<span class="day">12</span>
 							</div>
 							<div class="icon"></div>
 							<div class="comment">
@@ -171,7 +158,9 @@
 							</div>
 						</header>
 						<div class="entry">
-							<h1 class="title"><a href="#">Lonely Twitter</a></h1>
+							<h1 class="title">
+								<a href="#">Lonely Twitter</a>
+							</h1>
 							<div class="img_wrapper">
 								<img src="images/twitter.jpg" alt="Lonely Twitter" width="489px" height="262px">
 								<div class="zoom"></div>
@@ -191,7 +180,7 @@
 			</div>
 			<aside class="sidebar fRight">
 				<div class="search">
-					<form action="#" method="post" id="site_search">
+					<form action="#" method="get" id="site_search">
 						<input type="search" placeholder="Search" name="q" id="q">
 					</form>
 				</div>

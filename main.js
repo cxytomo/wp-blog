@@ -117,7 +117,7 @@ function getOffset(w) {
 
 window.onscroll = function(){
 	var offset = getOffset();
-	if(offset.y > 400) {
+	if(offset.y > 900) {
 		$('#nav .toTop').css('opacity','1');
 		$('#nav .archives').css('paddingRight','58px');
 	} else {
